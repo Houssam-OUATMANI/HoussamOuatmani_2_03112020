@@ -1,3 +1,5 @@
+/* Regles Genereales */
+
 *{
     list-style-type: none;
     font-family: 'Raleway' , sans-serif;   
@@ -21,12 +23,54 @@ h3{
     font-size: 1rem;
 }
 
+/* Section Header */
+
+.header {
+   max-width: 1440px;
+   margin:  0 auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top:  1rem;
+}
 
 
+.header h1 {
+    display: block;
+    margin-left: 1rem;
+    width: auto;
+}
 
+.header__nav{
+    order: 3;
+    width: 100%;
+}
+.header__nav ul{
+    display: flex;
+    padding-left: 0;
+}
 
+.header__nav ul li:first-child{
+    width: 50%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #0065fc;
+}
 
+.header__nav ul li:last-child{
+    width: 50%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #f2f2f2;
+}
 
+.register{
+    display: flex;
+    align-items: center;
+    color: #0065fc;
+    font-weight: 700;
+    margin: 0 1rem  ;
+}    
 
 
 /* Section Les plus populaires */
