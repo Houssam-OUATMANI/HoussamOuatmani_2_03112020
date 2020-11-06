@@ -10,24 +10,30 @@
 </head>
 <body>
    <header class="header">
-       <nav class="header__nav">
         <h1><img src="./assets//images/logo/Reservia.svg" alt="Reservia Logo"></h1>
-            <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-            </ul>
-       </nav>
-       <a class="register" href="#">S'inscrire</a>
-    </header>
+        <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+           </nav>
+           <a class="register" href="#">S'inscrire</a>
+   </header>
+
     <main class="container">
 
        <section class="header__search">
            <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
            <p>En plein centre ville ou en pleine nature</p>
+
            <form action="#" method="post">
+            <span class="icon__before">
+                <i class="fas fa-map-marker-alt map-marker-alt-black"></i>
+            </span>
                <input type="text" placeholder="Marseille,France" required>
-               <button type="submit">Rechercher</button>
+               <button type="submit"><i class="fas fa-search fa-search-white"></i> <span class="btn__search">Rechercher</span></button>
            </form>
+
        </section>
        <section class="header__filter">
            <h2>Filtres</h2>
