@@ -1,4 +1,4 @@
-/* Regles Genereales */
+/* Regles Generales */
 
 *{
     list-style-type: none;
@@ -22,7 +22,14 @@ img{
 h3{
     font-size: 1rem;
 }
+::placeholder{
+    color: #000000;
+}
 
+::selection{
+    color: crimson;
+    background-color: #000000;
+}
 /* Section Header */
 
 .header {
@@ -127,11 +134,72 @@ h3{
 .btn__search{
     display: none;
 }
+/* Section Filtres */
 
+.header__filter{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__filter h2 {
+    width: 100%;
+    margin-left: 1.8rem;
+    margin-top:  -.5rem;
+}
 
+.header__filter ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:  -.4rem;
+}
 
+.header__filter ul li:first-child{
+    display: flex;
+    align-items: center;
+    margin-right: .75rem;
+    margin-left: 0;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: .75rem;
+    padding-right: 1rem;
+    font-weight: 700;
+    
+    cursor: pointer;
+}
+.filter__economic__icon{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 3rem;
+   height: 3rem;
+   margin-right: 1rem;
+   background-color: #deebff;
+   border-radius: 50%;
+   color: #0065fc; 
+}
 
+.header__filter ul li:nth-child(2){
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: .75rem;
 
+    font-weight: 700;
+} 
+
+.filter__familial__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    background-color: #deebff;
+    border-radius: 50%;
+    color: #0065fc; 
+ }
 /* Section Les plus populaires */
 .container__popular{
     width: 100%;
