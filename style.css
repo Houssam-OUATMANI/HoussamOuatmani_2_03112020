@@ -301,7 +301,7 @@ nav{
 /* Section avtivités à Marseille */
 
 .container__activity{
-    width: 100%;
+    
     display: flex;
     flex-wrap: wrap;
     padding: 0 .1rem 1rem 1.3rem;
@@ -363,6 +363,11 @@ nav{
     }
     .form__and__filter__header__title{
         font-size: 1.8vw;
+    }
+    img {
+        width: 60%;
+        object-fit: cover;
+        display: block;
     }
     .results {
         width: 100%;
@@ -446,6 +451,7 @@ nav{
 }
 .popular__card{
     margin: 1.1rem 1rem 2rem 1rem;
+    transform: scale(0.90);
 }
 
 .lodging__data{
@@ -458,6 +464,7 @@ nav{
     }
     
     .lodging__city{
+        display: block;
         padding: 1.5rem 1.5rem 1rem 1.5rem;
         background-color: #f2f2f2;
         border-radius: 1rem;
@@ -467,23 +474,102 @@ nav{
     padding-left: 1.5rem;
 }
     .lodging__card {
+
         display: inline-block;
-        margin-left: 1rem;
-        width: 16rem;
-        height: 13rem;
+        width: 15vw;
+        height: 29vh;
         margin-bottom: 2rem;
+        margin-left: 2rem;
     }
     .results {
         width: 100%;
     } 
 
+    .container__activity {
+        display: block;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    .container__activity__card__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .column {
+        width: 20%;
+        margin: 0 1.5rem 0 1.5rem;
+        box-shadow: 0 0 10px black;
+        border-radius: 1.5rem;
+        transition: .3s;
+    }
+    
+    .column img {
+        width: 100%;
+        object-fit: cover;
+        transition: .3s;
+    }
+    .column img:hover {
+        transform: scale3d(1.2, 1.2, 1.2);
+        border-radius: 1rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.644);
+    }
+    .vieux-port{
+        height: 30rem;
+    }
+    .vieux-port img{
+    height: 25rem;
+    }
 
-     .card__big{
-        width: 20% !important;
+    .friol-pomegues{
+        display: flex;
+        flex-wrap: wrap;
+        height: 30rem;
+        border: none;
+        box-shadow: none;
     }
-   .container__activity img{
-        width: 0 ;
+    .column-friol{
+        width: auto;
+        height: 8rem;
+
+        margin: 0;
     }
+    .pomegues img {
+        height: 11rem;
+    }
+    .column-pomegues{
+        width: 100%;
+        height: 15.5rem;
+        margin: 0;
+       
+    }
+
+    .calanques{
+    height: 30rem;
+}
+    .calanques img{
+    height: 25rem;
+}
+.notre-dame-longchamp{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30rem;
+    border: none;
+    box-shadow: none;
+}
+.notre-dame,
+.longchamp{
+    width: 100%;
+    height: 47%;
+    margin: 0;
+
+}
+.notre-dame {
+align-self: flex-start;
+}
+.longchamp{
+align-self: flex-end;
+}
 
     .footer{
            display: flex;
