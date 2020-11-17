@@ -1,10 +1,8 @@
 * {
   font-family: "Raleway", sans-serif; /* Police par default sur tous les elements */
   font-size: 4vw; /* taille par rapport au Viewport */
-
   appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+ 
 }
 
 body {
@@ -111,8 +109,8 @@ nav {
   margin-bottom: 2rem;
 }
 .form__icon {
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f1;
+  border-bottom: 1px solid #f2f2f1;
   background-color: #f2f2f2;
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;

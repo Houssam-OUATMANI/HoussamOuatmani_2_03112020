@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="fr-FR">
   <head>
     <!--Meta tags-->
-    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="reservia Marseille" />
     <!-- Favicon -->
@@ -68,7 +69,7 @@
             </p>
           </header>
           <!-- Form -->
-          <main class="form__and__filter__main">
+          <div class="form__and__filter__main">
             <form action="#" method="post" class="form">
               <span class="form__icon">
                 <i class="fas fa-map-marker-alt map-marker-alt-black"></i>
@@ -83,34 +84,34 @@
                 ><span class="form__button__span">Rechercher</span>
               </button>
             </form>
-          </main>
+          </div>
           <!-- Filters -->
           <div class="form__and__filter__footer">
             <h2 class="form__and__filter__title">Filtres</h2>
-            <section class="filter__container">
+            <div class="filter__container">
               <span class="filter__icon">
                 <i class="fas fa-money-bill-wave"></i>
               </span>
               <p class="filters__name" id="economic">Économique</p>
-            </section>
-            <section class="filter__container">
+            </div>
+            <div class="filter__container">
               <span class="filter__icon">
                 <i class="fas fa-child"></i>
               </span>
               <p class="filters__name" id="familial">Familial</p>
-            </section>
-            <section class="filter__container">
+            </div>
+            <div class="filter__container">
               <span class="filter__icon">
                 <i class="fas fa-heart"></i>
               </span>
               <p class="filters__name" id="romantic">Romantique</p>
-            </section>
-            <section class="filter__container">
+            </div>
+            <div class="filter__container">
               <span class="filter__icon">
                 <i class="fas fa-dog"></i>
               </span>
               <p class="filters__name" id="animals">Animaux autorisés</p>
-            </section>
+            </div>
             <div class="results">
               <span class="results__icon">
                 <i class="fas fa-info"></i>
@@ -362,103 +363,94 @@
           <h2>Activités à Marseille</h2>
         </div>
         <div class="container__activity__card__container">
-          <div class="column column__tablet port__holder">
-            <div class="vieux-port">
-              <a href="#">
-                <div>
-                  <img
-                    src="./assets//images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                    alt="Vieux Port"
-                  />
-                </div>
-                <div>
-                  <h3>Vieux Port</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="column friol-pomegues column__tablet">
-            <div class="column column-pomegues">
-              <div class="pomegues">
-                <a href="#"> 
-                <div>
-                  <img
-                  src="./assets//images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                  alt="Fort de Pomègues"
-                />
-                </div>
-                <h3>Fort de Pomègues</h3>
-              </a>
-              </div>
-            </div>
-  
-            <div class="column column-friol column__tablet friol__tablet">
-              <div class="friol">
-                <a href="#">
-                  <div>
-                      <img
-                      src="./assets//images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                      alt="Iles du Frioul"
-                      />
-                    </div>
-                      <h3>Iles du Friol</h3>
-                </a>
-               
-            </div>
-            </div>
-          </div>
-         
-          
-          <div class="column column__tablet calanques__holder">
-            <div class="calanques">
-                <a href="#">
+              <div class="column column__tablet port__holder">
+                <div class="vieux-port">
+                  <a href="#">
                     <div>
-                        <img
-                        src="./assets//images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Parc National des Calanques"
+                      <img
+                        src="./assets//images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="Vieux Port"
                       />
                     </div>
-                   
-                    <h3>Parc National des Calanques</h3>
+                    <div>
+                      <h3>Vieux Port</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="column friol-pomegues column__tablet">
+                <div class="column column-pomegues">
+                  <div class="pomegues">
+                    <a href="#"> 
+                    <div>
+                      <img
+                      src="./assets//images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                      alt="Fort de Pomègues"
+                    />
+                    </div>
+                    <h3>Fort de Pomègues</h3>
+                  </a>
                   </div>
-                </a>
-               
-          </div>
-          <div class="column notre-dame-longchamp column__tablet">
-            <div class="column notre-dame notre-dame__shadow ">
-              <div class="notre-dame">
-                  <a href="#">
+                </div>
+      
+                <div class="column column-friol column__tablet friol__tablet">
+                  <div class="friol">
+                    <a href="#">
                       <div>
                           <img
-                          src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                          alt="Notre-Dame-de-la-Garde"
-                        />
-                      </div>
-                      <h3>Notre-Dame-de-la-Garde</h3>
-                  </a>
+                          src="./assets//images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                          alt="Iles du Frioul"
+                          />
+                        </div>
+                          <h3>Iles du Friol</h3>
+                    </a>
+                  
                 </div>
-           </div>
-              <div class="column longchamp column__tablet longchamp__tablet">
-              <div class="longchamp longchamp__shadow">
-                  <a href="#">
-                      <div>
-                          <img
-                        src="./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                        alt="Parc Longchamp"
-                      />
-                      </div>
-                      <h3>Parc Longchamp</h3>
-                  </a>
                 </div>
-          </div>
-         
-        </div>
-
-          <div>
-
-          
-         
+              </div>
+              <div class="column column__tablet calanques__holder">
+                <div class="calanques">
+                    <a href="#">
+                        <div>
+                            <img
+                            src="./assets//images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Parc National des Calanques"
+                          />
+                        </div>
+                      
+                        <h3>Parc National des Calanques</h3>
+                    </a>
+                  </div>
+              </div>
+              <div class="column notre-dame-longchamp column__tablet">
+                <div class="column notre-dame notre-dame__shadow ">
+                  <div class="notre-dame">
+                      <a href="#">
+                          <div>
+                              <img
+                              src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                              alt="Notre-Dame-de-la-Garde"
+                            />
+                          </div>
+                          <h3>Notre-Dame-de-la-Garde</h3>
+                      </a>
+                    </div>
+              </div>
+                  <div class="column longchamp column__tablet longchamp__tablet">
+                  <div class="longchamp longchamp__shadow">
+                      <a href="#">
+                          <div>
+                              <img
+                            src="./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            alt="Parc Longchamp"
+                          />
+                          </div>
+                          <h3>Parc Longchamp</h3>
+                      </a>
+                    </div>
+              </div>
+            
+            </div>
         </div>
       </section>
     </main>
