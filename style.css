@@ -334,6 +334,21 @@ nav {
   padding-left: 0.7rem;
 }
 
+.vieux-port,
+.calanques,
+.pomegues,
+.friol,
+.longchamp{
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.notre-dame{
+  display: flex;
+}
+.longchamp{
+  margin-top: .75rem;
+}
+
 .footer {
   margin-top: 1.2rem;
   padding: 1.5rem 1rem;
@@ -419,9 +434,18 @@ nav {
   }
 
   .container__activity img{
-    width: 35vw;
+    width: 38vw;
   }
-  
+  .vieux-port,
+.calanques,
+.pomegues,
+.friol,
+.longchamp{
+  margin-bottom: 0;
+}
+.pomegues {
+  margin-top: 0;
+}
   }
   .calanques,
   .vieux-port,
@@ -539,6 +563,9 @@ nav {
     align-items: flex-end;
   }
   .lodging__data__lodging p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 2;
     line-height: 0;
   }
   .lodging {
@@ -585,14 +612,38 @@ nav {
     justify-content: space-around;
     align-items: flex-start;
   }
+
+  .vieux-port,
+  .calanques,
+  .longchamp,
+  .notre-dame,
+  .friol,
+  .pomegues{
+    display: block;
+    margin-bottom: 0;
+  }
+  
+  .longchamp{
+    margin-top: 0;
+  }
+
+  .calanques,
+  .vieux-port,
+  .friol,
+  .column-pomegues,
+  .longchamp__shadow,
+  .notre-dame__shadow {
+      box-shadow: none;
+      border-radius: 1.5rem;
+  }
   .column {
     width: 22.5%;
-    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.26);
     border-radius: 1.5rem;
     transition: 0.3s;
   }
   .friol {
-    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.26);
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.26);
     border-radius: 1.5rem;
   }
 
@@ -610,7 +661,7 @@ nav {
     height: 30rem;
   }
   .vieux-port img {
-    height: 25rem;
+    height: 26.5rem;
   }
 
   .friol-pomegues {
@@ -623,18 +674,21 @@ nav {
   .column-friol {
     width: 100%;
     height: 5rem;
-    margin: 1rem 0 0 0;
   }
   .pomegues img {
-    height: 11.5rem;
+    height: 12.5rem;
   }
 
   .friol img {
-    height: 7rem;
+    height: 6rem;
+  }
+  .friol h3 {
+    padding-bottom: 1rem;
+    
   }
   .column-pomegues {
     width: 100%;
-    height: 15rem;
+    height: 16rem;
     margin: 0;
   }
 
@@ -642,7 +696,7 @@ nav {
     height: 30rem;
   }
   .calanques img {
-    height: 25rem;
+    height: 26.5rem;
   }
   .notre-dame-longchamp {
     display: flex;
