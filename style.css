@@ -198,7 +198,7 @@ nav {
   transition: 0.3s;
 }
 .results__icon:hover {
-  background-color: rgb(223, 178, 224);
+  background-color: rgb(218, 62, 75);
   color: black;
   border-color: black;
   transform: scale(1.5);
