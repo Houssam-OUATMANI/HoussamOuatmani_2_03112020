@@ -2,7 +2,6 @@
   font-family: "Raleway", sans-serif; /* Police par default sur tous les elements */
   font-size: 4vw; /* taille par rapport au Viewport */
   appearance: none;
- 
 }
 
 body {
@@ -40,7 +39,7 @@ a:hover {
 }
 .header__container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1600px;
 }
 ::placeholder {
   color: #000;
@@ -164,7 +163,7 @@ nav {
 }
 .filter__container:hover {
   background-color: rgb(218, 62, 75);
-  border-color: black;
+  border-color: #0065fc;
 }
 .filter__icon {
   display: flex;
@@ -185,6 +184,9 @@ nav {
   align-items: center;
   margin-top: 0.5rem;
 }
+.results p {
+  font-size:  .9rem;
+}
 .results__icon {
   display: flex;
   justify-content: center;
@@ -198,10 +200,8 @@ nav {
   transition: 0.3s;
 }
 .results__icon:hover {
-  background-color: rgb(218, 62, 75);
   color: black;
   border-color: black;
-  transform: scale(1.5);
 }
 
 /* Lodging */
@@ -237,7 +237,7 @@ nav {
   object-fit: cover;
 }
 .lodging__card__image img:hover {
-  transform: scale3d(1.5, 1.5, 1.5);
+  transform: scale(1.25);
 }
 .lodging__card__description {
   padding-bottom: 0.5rem;
@@ -288,14 +288,14 @@ nav {
 }
 
 .popular__card__image img {
-  height: 8.5rem; 
+  height: 8.5rem;
   border-radius: 0.9rem 0 0 0.9rem;
   object-fit: cover;
   transition: 0.3s;
 }
 
 .popular__card__image img:hover {
-  transform: scale3d(1.5, 1.5, 1.5);
+  transform: scale(1.25);
 }
 .lodging__data {
   margin-left: 1rem;
@@ -340,21 +340,34 @@ nav {
 .calanques,
 .pomegues,
 .friol,
-.longchamp{
+.longchamp {
   display: flex;
   margin-bottom: 1.5rem;
 }
-.notre-dame{
+.calanques,
+  .vieux-port,
+  .friol,
+  .column-pomegues,
+  .longchamp__shadow,
+  .notre-dame__shadow {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+    border-radius: 1.5rem;
+  }
+.notre-dame {
   display: flex;
 }
-.longchamp{
-  margin-top: .75rem;
+.longchamp {
+  margin-top: 0.75rem;
 }
 
 .footer {
+  display: block;
   margin-top: 1.2rem;
   padding: 1.5rem 1rem;
   background-color: #f2f2f2;
+}
+.footer__content {
+  display: block;
 }
 .footer section {
   padding: 0.5rem 0.5rem;
@@ -362,7 +375,7 @@ nav {
 
 /* Tablet rules */
 
-@media screen and (min-width: 600px) and (max-width: 1199px) {
+@media screen and (min-width: 599px) and (max-width: 1199px) {
   * {
     font-size: 1rem;
   }
@@ -385,18 +398,18 @@ nav {
     justify-content: space-around;
   }
 
- .container__activity {
-   padding: 0;
-   background-color: #f2f2f2;
-   border-radius: 1rem;
-   padding: 1rem 0 2rem 0;
-   margin-bottom: 2rem;
-   transition: .4s;
- }
- 
- .container__activity__title{
-   margin-left: 2rem;
- }
+  .container__activity {
+    padding: 0;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 1rem 0 2rem 0;
+    margin-bottom: 2rem;
+    transition: 0.4s;
+  }
+
+  .container__activity__title {
+    margin-left: 2rem;
+  }
   .popular__card {
     width: 40%;
   }
@@ -425,71 +438,78 @@ nav {
   .lodging__card__image img {
     width: 100%;
   }
-  .footer__tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   /* Activité à Marseille */
   .container__activity__card__container {
     display: flex;
     flex-wrap: wrap-reverse;
-    padding:  0 1.5rem 0 1.5rem;
-    
+    padding: 0 1.5rem 0 1.5rem;
   }
   .column {
-    margin: .5rem 0 .5rem 0;
+    margin: 0.5rem 0 0.5rem 0;
   }
 
-  .column__tablet{
-   display: flex;
-   width: 100%;
-   justify-content: space-between;
-   align-items: baseline;
+  .column__tablet {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
-  .container__activity img{
+  .container__activity img {
     width: 42vw;
   }
-.vieux-port,
-.calanques,
-.pomegues,
-.friol,
-.longchamp{
-  margin-bottom: 0;
-}
-.pomegues {
-  margin-top: 0;
-}
+  .vieux-port,
+  .calanques,
+  .pomegues,
+  .friol,
+  .longchamp {
+    margin-bottom: 0;
   }
+  .pomegues {
+    margin-top: 0;
+  }
+
   .calanques,
   .vieux-port,
   .friol,
   .column-pomegues,
   .longchamp__shadow,
   .notre-dame__shadow {
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
-      border-radius: 1.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+    border-radius: 1.5rem;
   }
   .longchamp__tablet,
-  .friol__tablet{
+  .friol__tablet {
     width: auto;
   }
   .calanques__holder {
     display: flex;
     justify-content: center;
   }
-  .port__holder{
+  .port__holder {
     display: flex;
     justify-content: center;
   }
-  @media screen and (min-width : 600px ) and (max-width : 720px) {
-    .popular__card__card__container p,
-    .popular__card__card__container h3 {
-      font-size: 2vw;
-    }
+  
+  .footer__content__tablet {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
+  
+
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  .popular__card__card__container p,
+  .popular__card__card__container h3 {
+    font-size: 2vw;
+  }
+}
 
 /* Desktop rules */
 
@@ -550,7 +570,9 @@ nav {
   .fa-search-white {
     display: none; /* Masquer L'icon Loop pendant l'affichage desktop en gardant son padding */
   }
-
+  .form__and__filter {
+    padding-bottom: 0;
+  }
   .form__and__filter__title {
     width: auto;
     margin-right: 1.5rem;
@@ -558,7 +580,9 @@ nav {
   .filter__container {
     margin: 0 1rem;
   }
-
+  .city__title {
+    padding-left: 0;
+  }
   .popular__title h2 {
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -567,12 +591,12 @@ nav {
   .popular__card {
     margin: 1.1rem 1rem 2rem 1rem;
   }
-  #aside__image__1{
+  #aside__image__1 {
     padding-right: 1.85rem;
   }
 
-  #aside__image__2{
-   width: 99%;
+  #aside__image__2 {
+    width: 99%;
   }
 
   .lodging__data {
@@ -611,14 +635,13 @@ nav {
     align-items: center;
     justify-content: space-around;
   }
-  .city__title {
-    padding-left: 1.5rem;
-  }
+
   .lodging__card {
     width: 30%;
   }
   .results {
     width: 100%;
+    padding-top: 1rem;
   }
 
   .container__activity {
@@ -628,7 +651,7 @@ nav {
   }
   .container__activity__title {
     padding-bottom: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .container__activity__card__container {
     display: flex;
@@ -642,12 +665,12 @@ nav {
   .longchamp,
   .notre-dame,
   .friol,
-  .pomegues{
+  .pomegues {
     display: block;
     margin-bottom: 0;
   }
-  
-  .longchamp{
+
+  .longchamp {
     margin-top: 0;
   }
 
@@ -657,8 +680,8 @@ nav {
   .column-pomegues,
   .longchamp__shadow,
   .notre-dame__shadow {
-      box-shadow: none;
-      border-radius: 1.5rem;
+    box-shadow: none;
+    border-radius: 1.5rem;
   }
   .column {
     width: 22.5%;
@@ -667,7 +690,7 @@ nav {
     transition: 0.3s;
   }
   .friol {
-   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.26);
     border-radius: 1.5rem;
   }
 
@@ -677,7 +700,7 @@ nav {
     transition: 0.3s;
   }
   .column img:hover {
-    transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale(1.1);
     border-radius: 1rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.644);
   }
@@ -697,18 +720,17 @@ nav {
   }
   .column-friol {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
   }
   .pomegues img {
     height: 12.5rem;
   }
 
   .friol img {
-    height: 6rem;
+    height: 6.5rem;
   }
   .friol h3 {
     padding-bottom: 1rem;
-    
   }
   .column-pomegues {
     width: 100%;
@@ -743,6 +765,12 @@ nav {
 
   .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .footer__content {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
