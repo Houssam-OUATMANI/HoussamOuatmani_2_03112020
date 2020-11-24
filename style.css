@@ -613,7 +613,6 @@ nav {
   .lodging__data__lodging p {
     text-overflow: ellipsis;
     white-space: nowrap;
-    -webkit-line-clamp: 2;
     line-height: 0;
   }
   .lodging {
