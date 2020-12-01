@@ -4,12 +4,14 @@
   appearance: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0; /* retire les marges par default sur le body */
   box-sizing: border-box;
   max-width: 1600px;
   margin: auto;
-  
 }
 h1 {
   margin: 0; /* retire les marges par default sur le h1 */
