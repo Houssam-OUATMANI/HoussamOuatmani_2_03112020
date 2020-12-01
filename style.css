@@ -669,6 +669,7 @@ nav {
     display: block;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin-right : .75rem;
   }
   .container__activity__title {
     padding-bottom: 1rem;
