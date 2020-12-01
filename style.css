@@ -165,8 +165,7 @@ nav {
   cursor: pointer;
 }
 .filter__container:hover {
-  background-color: rgb(218, 62, 75);
-  border-color: #0065fc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 }
 .filter__icon {
   display: flex;
@@ -231,7 +230,7 @@ nav {
   transition: 0.3s;
 }
 .lodging__card:hover {
-  background-color: rgb(218, 62, 75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 }
 .lodging__card__image img {
   height: 8rem;
@@ -240,7 +239,8 @@ nav {
   object-fit: cover;
 }
 .lodging__card__image img:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
+  border-radius: 1rem;
 }
 .lodging__card__description {
   padding-bottom: 0.5rem;
@@ -281,7 +281,7 @@ nav {
   display: flex;
 }
 .popular__card:hover {
-  background-color: rgb(218, 62, 75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 }
 .popular__card__image__container {
   width: 41%;
@@ -298,7 +298,8 @@ nav {
 }
 
 .popular__card__image img:hover {
-  transform: scale(1.25);
+  transform: scale(1.10);
+  border-radius: 1rem;
 }
 .lodging__data {
   margin-left: 1rem;
@@ -355,6 +356,15 @@ nav {
   .notre-dame__shadow {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
     border-radius: 1.5rem;
+  
+  }
+.column img {
+  transition: .3s;
+}
+  .column img:hover {
+    transform: scale(1.01);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.644);
   }
 .notre-dame {
   display: flex;
@@ -708,11 +718,7 @@ nav {
     object-fit: cover;
     transition: 0.3s;
   }
-  .column img:hover {
-    transform: scale(1.1);
-    border-radius: 1rem;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.644);
-  }
+  
   .vieux-port {
     height: 30rem;
   }
