@@ -7,6 +7,9 @@
 body {
   margin: 0; /* retire les marges par default sur le body */
   box-sizing: border-box;
+  max-width: 1600px;
+  margin: auto;
+  
 }
 h1 {
   margin: 0; /* retire les marges par default sur le h1 */
@@ -39,7 +42,7 @@ a:hover {
 }
 .header__container {
   margin: 0 auto;
-  max-width: 1600px;
+  
 }
 ::placeholder {
   color: #000;
@@ -524,8 +527,12 @@ nav {
     width: 120px;
   }
 
+  .header__container__navbar{
+    margin-top: 0;
+  }
+
   .header__container {
-    top: -32px;
+    top: -1rem;
     position: relative;
     margin-bottom: 2rem;
     padding: 0 3rem 0 2.5rem;
@@ -560,6 +567,9 @@ nav {
 
   .form__and__filter__header__title {
     font-size: 1.8vw;
+  }
+  .form__and__filter__main form {
+    width: auto;
   }
   .form__button {
     border-radius: 0 1rem 1rem 0;
