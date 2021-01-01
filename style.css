@@ -3,7 +3,6 @@
   font-size: 4vw; /* taille par rapport au Viewport */
   appearance: none;
 }
-
 html{
   scroll-behavior: smooth;
 }
